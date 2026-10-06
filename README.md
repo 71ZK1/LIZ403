@@ -72,3 +72,13 @@ pip install -r requirements.txt
 
 # 4. Verify installation
 python LIZ403.py --help
+
+        OR
+
+# 1. Clone the repository
+git clone https://github.com/71ZK1/LIZ403.git
+cd LIZ403
+
+# 2. chmod +x install.sh
+./install.sh
+
