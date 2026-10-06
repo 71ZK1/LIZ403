@@ -1,0 +1,5 @@
+# LIZ403 - Advanced 403 Bypass Tool
+# Python 3.9+ required
+
+# Core dependency: TLS fingerprint impersonation (Chrome JA4, Firefox, Safari)
+curl_cffi>=0.6.0
