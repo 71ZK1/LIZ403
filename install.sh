@@ -2,17 +2,20 @@
 
 set -e
 
-echo "[*] Installing python3-venv..."
 sudo apt install python3-venv -y
 
-echo "[*] Creating virtual environment..."
 python3 -m venv .venv
+echo "done"
 
-echo "[*] Installing dependencies..."
-.venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install -r requirements.txt
+source .venv/bin/activate
+echo "Virtual environment activated"
 
-echo "[*] Verifying LIZ403..."
-.venv/bin/python LIZ403.py --help
+pip install -r requirements.txt
+echo "done..."
 
-echo "[+] LIZ403 installed successfully!"
+echo "verifying.........."
+sleep 3
+
+python LIZ403.py --help
+
+echo "done"
